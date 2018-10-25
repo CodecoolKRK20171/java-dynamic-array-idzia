@@ -1,5 +1,6 @@
 package com.codecool.dynamicArrayDojo;
 
+import com.codecool.dynamicArrayDojo.array.DynamicIntArray;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,11 +14,13 @@ class DynamicIntArrayTest {
         new DynamicIntArray(15);
     }
 
+
     @Test
     void addTest() {
         DynamicIntArray array = createArray(11);
         array.add(32);
         array.add(42);
+
         String result = " 0 1 2 3 4 5 6 7 8 9 10 32 42";
         assertEquals(result, array.toString());
     }
@@ -44,7 +47,8 @@ class DynamicIntArrayTest {
     void removeTest_InvalidItem()
     {
         DynamicIntArray array = createArray(10);
-        assertThrows(ArrayIndexOutOfBoundsException.class, () -> array.remove(10));
+        assertThrows(ArrayIndexOutOfBoundsException.class,
+                () -> array.remove(10));
         assertThrows(ArrayIndexOutOfBoundsException.class, () -> array.remove(-1));
     }
 
@@ -61,8 +65,7 @@ class DynamicIntArrayTest {
 
     private DynamicIntArray createArray(int numOfElements) {
         DynamicIntArray array = new DynamicIntArray();
-        for (int i = 0; i < numOfElements; ++i)
-        {
+        for (int i = 0; i < numOfElements; ++i) {
             array.add(i);
         }
         return array;
