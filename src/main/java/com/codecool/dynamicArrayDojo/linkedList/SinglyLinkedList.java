@@ -1,10 +1,5 @@
 package com.codecool.dynamicArrayDojo.linkedList;
 
-//head : a reference to the first node in a linked list
-//last : always points to the last element in the list. It's not always present but it's useful if you are appending a lot
-//length : the number of nodes in a list. It is also not mandatory to have this field but counting the length of the list is much slower without it
-
-
 public class SinglyLinkedList {
 
     private Node head;

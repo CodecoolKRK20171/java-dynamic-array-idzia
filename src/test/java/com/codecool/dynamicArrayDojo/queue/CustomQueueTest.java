@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CustomeQueueTest {
+class CustomQueueTest {
 
     @Test
-    void CustomeQueueTest_CheckHead(){
-        CustomeQueue queue = new CustomeQueue();
+    void CustomQueueTest_CheckHead(){
+        CustomQueue queue = new CustomQueue();
         queue.enqueue("Ania");
 
         String expected = "Ania";
@@ -18,8 +18,8 @@ class CustomeQueueTest {
     }
 
     @Test
-    void CustomeQueueTest_CheckHeadAfterAddFewValue(){
-        CustomeQueue queue = new CustomeQueue();
+    void CustomQueueTest_CheckHeadAfterAddFewValue(){
+        CustomQueue queue = new CustomQueue();
         queue.enqueue("Ania");
         queue.enqueue("Amelia");
         queue.enqueue("Antosia");
@@ -32,8 +32,8 @@ class CustomeQueueTest {
     }
 
     @Test
-    void CustomeQueueTest_CheckTailAfterAddFewValue(){
-        CustomeQueue queue = new CustomeQueue();
+    void CustomQueueTest_CheckTailAfterAddFewValue(){
+        CustomQueue queue = new CustomQueue();
         queue.enqueue("Ania");
         queue.enqueue("Amelia");
         queue.enqueue("Antosia");
@@ -46,8 +46,8 @@ class CustomeQueueTest {
     }
 
     @Test
-    void CustomeQueueTest_Peek(){
-        CustomeQueue queue = new CustomeQueue();
+    void CustomQueueTest_Peek(){
+        CustomQueue queue = new CustomQueue();
         queue.enqueue("Ania");
         queue.enqueue("Amelia");
         queue.enqueue("Antosia");
@@ -60,8 +60,8 @@ class CustomeQueueTest {
     }
 
     @Test
-    void CustomeQueueTest_Dequeue(){
-        CustomeQueue queue = new CustomeQueue();
+    void CustomQueueTest_Dequeue(){
+        CustomQueue queue = new CustomQueue();
 
         queue.enqueue("Amelia");
         queue.enqueue("Antosia");
@@ -74,8 +74,8 @@ class CustomeQueueTest {
     }
 
     @Test
-    void CustomeQueueTest_HeadAfterDequeue(){
-        CustomeQueue queue = new CustomeQueue();
+    void CustomQueueTest_HeadAfterDequeue(){
+        CustomQueue queue = new CustomQueue();
 
         queue.enqueue("Amelia");
         queue.enqueue("Antosia");
@@ -89,8 +89,8 @@ class CustomeQueueTest {
     }
 
     @Test
-    void CustomeQueueTest_Size(){
-        CustomeQueue queue = new CustomeQueue();
+    void CustomQueueTest_Size(){
+        CustomQueue queue = new CustomQueue();
 
         queue.enqueue("Ania");
         queue.enqueue("Amelia");
@@ -105,8 +105,8 @@ class CustomeQueueTest {
     }
 
     @Test
-    void CustomeQueueTest_SizeAfterDequeue(){
-        CustomeQueue queue = new CustomeQueue();
+    void CustomQueueTest_SizeAfterDequeue(){
+        CustomQueue queue = new CustomQueue();
 
         queue.enqueue("Ania");
         queue.enqueue("Amelia");
@@ -124,8 +124,8 @@ class CustomeQueueTest {
     }
 
     @Test
-    void CustomeQueueTest_EmptyQueueSize(){
-        CustomeQueue queue = new CustomeQueue();
+    void CustomQueueTest_EmptyQueueSize(){
+        CustomQueue queue = new CustomQueue();
 
         int expected = 0;
         int result = (queue.queueSize());

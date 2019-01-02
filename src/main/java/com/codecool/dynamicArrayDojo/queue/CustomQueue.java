@@ -1,11 +1,11 @@
 package com.codecool.dynamicArrayDojo.queue;
 
-public class CustomeQueue {
+public class CustomQueue {
 
     private Nodee head;
     private Nodee tail;
 
-    public CustomeQueue (){
+    public CustomQueue(){
     }
 
     public Nodee getHead() {
